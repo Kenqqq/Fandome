@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<!--
+IMPORTANT!
+READ TAILWINDCSS DOCUMENTATION FIRST IF YOU WANT TO MODIFY THE STYLES.
+DIRECTLY USING CLASSES TO MANIPULATE A STYLE WILL STILL WORK. BE CAREFUL OF
+STYLES DUPLICATION THO.
+-->
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- sidebar  and header note: feel free to turn this to pure css  -->
+        <div class="flex flex-col w-20 bg-white shadow-md border border-gray-400 rounded-xl mr-0 m-2 overflow-hidden">
+            <div class="flex flex-col items-center justify-center px-1 border-b cursor-pointer">
+                <img src="https://i.ibb.co/QHr3bGz/image.png" alt="Profile" class="w-15 h-15"
+                    onclick="window.location.href='index.html'">
+            </div>
+            <div class="flex-grow flex flex-col items-center space-y-6 pt-4">
+                <i class="fas fa-user-circle text-gray-600 text-2xl cursor-pointer"
+                    onclick="window.location.href='groupconv.html'"></i>
+                <i class="fas fa-comments text-gray-600 text-2xl cursor-pointer"
+                    onclick="window.location.href='search.html'"></i>
+                <i class="fas fa-pen text-gray-600 text-2xl cursor-pointer"
+                    onclick="window.location.href='createcommunity.html'"></i>
+                <i class="fas fa-plus text-gray-600 text-2xl cursor-pointer" onclick="window.location.href='joingroup.html'"></i>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <div class="py-3">
+                    <i class="fas fa-bell text-gray-600 text-2xl cursor-pointer mx-auto block" onclick="window.location.href='notifications.html'"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-grow m-2">
+            <div class="w-1/4 bg-white shadow-md flex flex-col rounded-xl border border-gray-400">
+                <div class="flex items-center p-4 border-b justify-between">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Profile" class="rounded-full w-10 h-10">
+                        <p class="ml-2 font-medium">John Kenneth Sangco</p>
+                    </div>
+                    <i class="fas fa-cog text-gray-600 text-xl cursor-pointer" onclick="window.location.href='manage.html'"></i>
+                </div>
+
+                <div class="p-4 flex items-center justify-between">
+                    <p class="font-bold">Notifications</p>
+                    <i class="fas fa-bell text-gray-700 text-lg"></i>
+                </div>
+
+                <div class="flex-grow overflow-y-auto"> <!--- ovflow for long lists of notifications -->
+                    <div class="p-4 space-y-4">
+                       <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-between">
+                            <span>Notification Text 1</span>
+                            <button class="bg-white text-black px-3 py-1 rounded-md text-sm">View</button>
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-between">
+                            <span>Notification Text 2</span>
+                            <button class="bg-white text-black px-3 py-1 rounded-md text-sm">View</button>
+                        </div>
+                       <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-between">
+                            <span>Notification Text 3</span>
+                            <button class="bg-white text-black px-3 py-1 rounded-md text-sm">View</button>
+                        </div>
+                         <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-between">
+                            <span>Notification Text 4 </span>
+                            <button class="bg-white text-black px-3 py-1 rounded-md text-sm">View</button>
+                        </div>
+                          <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-between">
+                            <span>Notification Text 5</span>
+                            <button class="bg-white text-black px-3 py-1 rounded-md text-sm">View</button>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="flex-grow shadow-md flex flex-col ml-2 border border-gray-400 rounded-xl bg-gray-300">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
